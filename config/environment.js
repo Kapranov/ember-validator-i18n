@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'blog-post-ember-conventions-steps',
+    modulePrefix: 'ember-validator-i18n',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
