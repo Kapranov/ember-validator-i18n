@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-validator-i18n',
+    modulePrefix: 'blog-post-ember-conventions-steps',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -29,6 +29,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.i18n = { defaultLocale: 'en' };
   }
 
   if (environment === 'test') {
