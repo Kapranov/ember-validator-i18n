@@ -1,1 +1,22 @@
-{{yield}}
+<div class="form-group {{if (gt (get model (concat 'errors.' attribute '.length')) 0) 'has-error'}}">
+<label title="{{placeholder}}"
+       class='control-label'
+       for='{{attribute}}'>
+    {{label}}
+  </label>
+  <input value={{get model attribute}}
+         oninput={{action this.attrs.onUpdateValue value="target.value"}}
+         class='form-control'
+         placeholder={{placeholder}}
+         type='text'
+         id={{attribute}}
+  >
+
+  {{#each (get model (concat 'errors.' attribute)) as |error|}}
+    <span class="help-block">{{error.message}}</span>
+  {{/each}}
+
+  {{#if hasHelp}}
+    <span class="help-block">{{helpText}}</span>
+  {{/if}}
+</div>

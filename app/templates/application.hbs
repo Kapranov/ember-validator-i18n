@@ -1,1 +1,26 @@
-{{outlet}}
+<div class="container">
+  <h2 id="title">Conventions, Conventions</h2>
+
+  <button class='btn btn-default' disabled={{eq i18n.locale 'en'}} onClick={{action 'setLocale' 'en'}}>English</button>
+  <button class='btn btn-default' disabled={{eq i18n.locale 'ua'}} onClick={{action 'setLocale' 'ua'}}>Ukrainian</button>
+
+  <div class="row">
+    <div class="col-sm-6">
+      {{attribute-text
+        model=model
+        attribute='name'
+        onUpdateValue=(action 'setName')
+      }}
+    </div>
+
+    <div class="col-sm-6">
+      {{attribute-text
+        model=model
+        attribute='age'
+        onUpdateValue=(action 'setAge')
+      }}
+    </div>
+  </div>
+
+  {{outlet}}
+</div>

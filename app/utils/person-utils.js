@@ -1,3 +1,6 @@
-export default function personUtils() {
-  return true;
-}
+export default {
+  PERSON: {
+    NAME: 'name',
+    AGE: 'age'
+  }
+};

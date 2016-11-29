@@ -1,11 +1,16 @@
 export default {
-  // "some.translation.key": "Text for some.translation.key",
-  //
-  // "a": {
-  //   "nested": {
-  //     "key": "Text for a.nested.key"
-  //   }
-  // },
-  //
-  // "key.with.interpolation": "Text with {{anInterpolation}}"
+  'model': {
+    'person': {
+      'name': {
+        'label': 'Призвище',
+        'help': 'Це назва буде видоброжатися в назве приложения',
+        'placeholder': 'Вік (в роках)'
+      },
+      'age': {
+        'label': 'Вік',
+        'help': 'Це поле використовиваеться як частина продукту',
+        'placeholder': 'Вік (в роках)'
+      }
+    }
+  }
 };
